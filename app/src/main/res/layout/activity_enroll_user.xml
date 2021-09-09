@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ai.tech5.view.EnrollUserActivity"
+        android:background="@drawable/screenbackground">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:theme="@style/CustomActionBar" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/nik_details_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/face_image"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/imageborder_gold"
+                        android:scaleType="fitCenter" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patientid_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/face_image">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patientid_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="PatientID"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/scankit_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/patientid_tv"
+                        android:layout_toLeftOf="@+id/face_image">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/scankit_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="Scan Kit"
+                            android:inputType="textMultiLine"
+                            android:maxLength="100"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/vaccinebox_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/scankit_tv"
+                        android:layout_toLeftOf="@+id/face_image">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/vaccinebox_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="Scan Vaccine Box"
+                            android:inputType="textMultiLine"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/scancatridge_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vaccinebox_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/scancatridge_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="Scan Catridge"
+                            android:inputType="textMultiLine"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/scaninjector_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/scancatridge_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/scaninjector_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="Scan Injector"
+                            android:inputType="textMultiLine"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/vediopath_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/scaninjector_tv"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/vediopath_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="VEDIOPATH"
+                            android:inputType="textPersonName"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vediopath_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="EMAIL"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/responce_name_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/dob_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/responce_dob_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Date Of Birth"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/country_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dob_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/responce_country_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Country"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gender_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/country_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/responce_gender_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Gender"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bloodgroup_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gender_tv">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/responce_bloodgroup_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="BloodGroup"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email_tv"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/generate_bt"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/btn_lg_backdrop"
+                            android:drawableLeft="@drawable/auth_white_res"
+                            android:drawablePadding="-40dp"
+                            android:onClick="generateZip"
+                            android:padding="5dp"
+                            android:text="GENERATE HEALTH ID"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>
+</layout>

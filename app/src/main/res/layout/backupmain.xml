@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/CustomActionBar" />
+    <!--    <include layout="@layout/background"></include>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RR2"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/app_icon"></ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:id="@+id/RR2"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/background_res"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/iv_enroll"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/enroll_new"></Button>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monsterrat_font_family"
+                    android:gravity="center"
+                    android:text="ENROLL"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/iv_scan"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/verify_new"></Button>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monsterrat_font_family"
+                    android:gravity="center"
+                    android:text="GENERATE HEALTH ID"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_add_barcode"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_baseline_verified_24"></Button>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monsterrat_font_family"
+                    android:gravity="center"
+                    android:text="DISPLAY HEALTH ID"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/img_copy_right_t5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/newlogo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver."
+                android:textColor="@color/bright_orange"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/deep_dark_blue"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <!--        </LinearLayout>-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/powered_by_logo"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="wrap_content"-->
+
+        <!--            android:layout_margin="15dp"-->
+        <!--            android:adjustViewBounds="true"-->
+        <!--            android:src="@drawable/powered_by_tech5"-->
+        <!--            android:visibility="gone" />-->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

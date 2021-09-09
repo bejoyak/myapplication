@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground">
+
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/CustomActionBar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:background="@drawable/upload_frame"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:id="@+id/img_bar_code"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt_barcode_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="" />
+        <Button
+            android:id="@+id/btn_add_barcode"
+            android:layout_width="255dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_lg_backdrop"
+            android:scaleType="fitCenter"
+            android:text=" Add T5-Cryptograph "
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_decode"
+            android:layout_width="255dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_lg_backdrop"
+            android:onClick="generateZip"
+            android:scaleType="fitCenter"
+            android:text="Decode"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

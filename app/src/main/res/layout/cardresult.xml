@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:layout_marginTop="20dp"
+
+android:layout_height="wrap_content"
+android:background="@color/backgroudlight">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_marginTop="5dp">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/key">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/value"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:singleLine="false"-->
+<!--            android:text=""-->
+<!--            android:textSize="16sp" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/key"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:fontFamily="@font/monsterrat_font_family"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <EditText
+        android:id="@+id/value"
+        android:textSize="15sp"
+        android:textDirection="ltr"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/monsterrat_font_family"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/LL_Details"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/ll1"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout style="@style/InputTextLayout"-->
+<!--            >-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/et_name_card"-->
+<!--                style="@style/InputEditText"-->
+<!--                android:fontFamily="@font/monsterrat_font_family"-->
+<!--                android:hint="Full Name" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout style="@style/InputTextLayout">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/et_Dob_card"-->
+<!--                style="@style/InputEditText"-->
+<!--                android:focusable="false"-->
+<!--                android:hint="DateOfBirth"-->
+<!--                android:fontFamily="@font/monsterrat_font_family"-->
+<!--                android:maxLength="50" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout style="@style/InputTextLayout">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/et_country_card"-->
+<!--                style="@style/InputEditText"-->
+<!--                android:hint="Country"-->
+<!--                android:fontFamily="@font/monsterrat_font_family"-->
+<!--                android:maxLength="50" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout style="@style/InputTextLayout">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/et_email_card"-->
+<!--                style="@style/InputEditText"-->
+<!--                android:hint="Email"-->
+<!--                android:fontFamily="@font/monsterrat_font_family"-->
+<!--                android:inputType="textEmailAddress" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--&lt;!&ndash;        <Spinner&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/sp_gender"&ndash;&gt;-->
+<!--&lt;!&ndash;            style="@style/SpinnerLayout"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:entries="@array/gender_list"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/monsterrat_font_family"&ndash;&gt;-->
+<!--&lt;!&ndash;            />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <Spinner&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/sp_blood_group"&ndash;&gt;-->
+<!--&lt;!&ndash;            style="@style/SpinnerLayout"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:entries="@array/blood_group_list"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/monsterrat_font_family"&ndash;&gt;-->
+<!--&lt;!&ndash;            />&ndash;&gt;-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout style="@style/InputTextLayout">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/sp_gender_card"-->
+<!--                style="@style/InputEditText"-->
+<!--                android:hint="Gender"-->
+<!--                android:fontFamily="@font/monsterrat_font_family"-->
+<!--                android:maxLength="50" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout style="@style/InputTextLayout">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/sp_blood_group_card"-->
+<!--                style="@style/InputEditText"-->
+<!--                android:hint="BloodGroup"-->
+<!--                android:fontFamily="@font/monsterrat_font_family"-->
+<!--                android:inputType="textEmailAddress" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--    </LinearLayout>-->
+</LinearLayout>
+</LinearLayout>

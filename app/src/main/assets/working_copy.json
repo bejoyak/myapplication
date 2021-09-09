@@ -1,0 +1,59 @@
+{
+  "barcodeGenerationParameters": {
+    "blockCols": 12,
+    "blockRows": 12,
+    "errorCorrection": {
+      "percents": 17,
+      "value": 8
+    },
+    "gridSize": 6,
+    "thickness": 1,
+    "style": "lines",
+    "expirationDate": {
+      "enabled": true,
+      "value": 31536000
+    },
+    "title": {
+      "text": "My TECH5 cryptograph",
+      "alignment": "center",
+      "location": "top",
+      "offset": 10
+    },
+    "cryptographID": {
+      "qty": 1,
+      "size": 16
+    },
+    "compressedFaceImage": {
+      "qty": 1,
+      "size": 800
+    },
+    "faceBiometricTemplate": {
+      "qty": 1,
+      "size": 286
+    },
+    "fingerprintBiometricTemplates": {
+      "qty": 0,
+      "size": 180
+    },
+    "voiceBiometricTemplate": {
+      "qty": 0,
+      "size": 620
+    },
+    "demographicData": {
+      "qty": 1,
+      "size": 100
+    },
+    "digitalCertificate": {
+      "qty": 0,
+      "size": 100
+    },
+    "extra": {
+      "qty": 0,
+      "size": 100
+    },
+    "binaryBlob": {
+      "qty": 0,
+      "size": 100
+    }
+  }
+}

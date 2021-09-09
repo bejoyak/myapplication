@@ -1,0 +1,306 @@
+<resources>
+<string name="app_name">Tech5</string>
+
+<string-array name="all_permissions">
+    <item>android.permission.WRITE_EXTERNAL_STORAGE</item>
+    <item>android.permission.CAMERA</item>
+    <item>android.permission.READ_EXTERNAL_STORAGE</item>
+    <item>android.permission.RECORD_AUDIO</item>
+</string-array>
+<string-array name="gender_list">
+    <item>Select Gender</item>
+    <item>Male</item>
+    <item>Female</item>
+</string-array>
+<string-array name="blood_group_list">
+    <item>Blood Group</item>
+    <item>A+</item>
+    <item>A-</item>
+    <item>B+</item>
+    <item>B-</item>
+    <item>O+</item>
+    <item>O-</item>
+    <item>AB+</item>
+    <item>AB-</item>
+</string-array>
+
+<string name="take_photo">Take Photo</string>
+<string name="choose_from_library">Choose from Library</string>
+<string name="cancel">Cancel</string>
+////////////////////////////////////////
+<string name="folder_name">T5Cryptograph</string>
+<string name="please_wait">Please wait....</string>
+<string name="title_activity_res">ResActivity</string>
+<string name="version">07.02.2020</string>
+<string name="request_permission">Camera permission required.</string>
+<string name="camera_error">This device doesn\'t support Camera2 API.</string>
+<string name="finger_capture_error">Finger capturing issue.</string>
+<string name="face_capture_error">Face capturing issue.</string>
+<string name="iso_creation_error">Fail to create iso</string>
+<string name="identy_sdk_error">Identy SDK initialization failed</string>
+<string name="name_hint">Enter your name</string>
+<string name="company_hint">Company</string>
+<string name="country_hint">Country</string>
+<string name="city_hint">City</string>
+<string name="designation_hint">Designation</string>
+<string name="email_hint">Email ID</string>
+<string name="aadhar_hint">Aadhaar No/ID Doc No</string>
+<string name="Age_hint">Age</string>
+<string name="Address_hint">Address</string>
+<string name="Vaccinedose_hint">VaccineDose</string>
+<string name="Doctorname_hint">DoctorName</string>
+<string name="Description_hint">Description</string>
+<string name="Phonenumber_hint">Whatsapp PhoneNumber</string>
+
+<string name="gender_hint">Select Gender</string>
+<string name="marital_status_hint">Marital Status</string>
+<string name="blood_group_hint">Blood Group</string>
+<string name="barcode_validity_hint">Cryptograph Validity(In Days)</string>
+<string name="select_face_text">Capture Face Image</string>
+<string-array name="vaccinedose_list">
+    <item>Select Vaccination Dose</item>
+    <item>1</item>
+    <item>2</item>
+</string-array>
+<string-array name="vaccinename_list">
+    <item>Select Vaccination Name</item>
+    <item>covaxin</item>
+    <item>covishield</item>
+</string-array>
+<string-array name="marital_status_list">
+    <item>Marital Status</item>
+    <item>Married</item>
+    <item>Not Married</item>
+</string-array>
+<string-array name="validity_list">
+    <item>Barcode Validity(In Days)</item>
+    <item>30</item>
+    <item>60</item>
+    <item>90</item>
+    <item>180</item>
+    <item>360</item>
+</string-array>
+<!--    <string-array name="compression_list">-->
+<!--        <item>1 &#8211; 800 bytes</item>-->
+<!--        <item>2 &#8211; 900 bytes</item>-->
+<!--        <item>3 &#8211; 1000 bytes</item>-->
+<!--        <item>4 &#8211; 1100 bytes</item>-->
+<!--        <item>5 &#8211; 1200 bytes</item>-->
+<!--    </string-array>-->
+
+<string-array name="compression_list">
+    <item>800</item>
+    <item>900</item>
+    <item>1000</item>
+    <item>1100</item>
+    <item>1200</item>
+</string-array>
+
+<string-array name="challenges_list">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+</string-array>
+
+<string-array name="finger_template_size_list">
+    <item>0</item>
+    <item>180</item>
+    <item>190</item>
+    <item>200</item>
+    <item>210</item>
+    <item>220</item>
+    <item>230</item>
+    <item>240</item>
+    <item>250</item>
+</string-array>
+
+<string-array name="thickness_list">
+    <item>1</item>
+    <item>2</item>
+</string-array>
+
+<string-array name="grid_sizes_list">
+    <item>6</item>
+    <item>8</item>
+</string-array>
+<string name="select_combinations">Select Finger Combination(Optional)</string>
+<string name="choose_code_style">Choose Cryptograph Style</string>
+<string name="left_four">Left Four Fingers</string>
+<string name="right_four">Right Four Fingers</string>
+<string name="left_thumb">Left Thumb</string>
+<string name="right_thumb">Right Thumb</string>
+<string name="capture">Capture</string>
+
+<string name="capture_face">Capture Face Image</string>
+<string name="fill_data">Please fill your details</string>
+<string name="done">Done</string>
+<string name="retake">Retake</string>
+<string name="close">Close</string>
+<string name="enroll">Enroll</string>
+<string name="enroll_error">Enroll task failed.</string>
+<string name="network_activity_error">Something went wrong&#8230;Please try later!</string>
+<string name="response_error">Error in server response.Please try later!</string>
+<string name="bbc_file_creation_error">Cryptograph file creation error</string>
+<string name="debug_error">Enable Debugging</string>
+<string name="restart_app_message">SDK Initialisation Successful!! Please Restart App.</string>
+<string name="ok_message">OK</string>
+<string name="base_url_hint">Base Url</string>
+<string name="create_request_url_hint">Enroll User Method</string>
+<string name="idencode_base_url_hint">Idencode Base Url</string>
+<string name="middleware_base_url_hint">Middleware Base Url</string>
+<string name="change_url">Change Settings</string>
+<string name="sdk_initialization_fail_message">SDK Initialisation Failed!! Please Restart App.</string>
+<string name="finger_sdk_initialization_failed">Finger Client SDK Initialisation Failed!!</string>
+<string name="demogs_error_message">Something went wrong&#8230;Please adjust camera and try again</string>
+
+<string name="error_correction_hint">Error Correction</string>
+<string name="max_finger_template_size">Max Finger Template Size in bytes per finger</string>
+<string name="user_settings_changed">User settings changed successfully.</string>
+
+<string name="payload_exceeds_capacity">Your payload exceeded the cryptograph capacity.</string>
+
+<string name="capture_type">Capture Type</string>
+
+
+<string name="tech5_hyperlink"><a href='https://tech5.ai/'>&#169;TECH5.ai,</a> </string>
+<string name="tech5_url">https://tech5.ai/</string>
+<string name="add_barcode">Add Cryptograph</string>
+<string name="decode">Decode</string>
+
+<string name="auto_capture">Auto Capture</string>
+<string name="manual_capture">Manual Capture</string>
+<string name="no_barcodes_to_show">No Cryptographs to show</string>
+
+<string name="processing">Processing</string>
+<string name="device_processing">Device processing</string>
+<string name="backend_processing">Backend processing</string>
+
+<string name="include_face_template">Include face template in Cryptograph</string>
+<string name="yes">Yes</string>
+<string name="no">No</string>
+
+<string name="code_dimensions">Code Dimensions</string>
+<string name="code_dims_auto">Auto</string>
+<string name="code_dims_manual">Manual</string>
+<string name="code_title">Code Title</string>
+
+<string name="enable">Enable</string>
+<string name="disable">Disable</string>
+
+<string name="rows">Rows</string>
+<string name="cols">Columns</string>
+
+<string name="use_back_camera">Use Back Camera for Face Capture</string>
+
+<string name="type_of_data">Type of Data in the Cryptograph</string>
+<string name="cryptograph_params">Cryptograph Parameters</string>
+
+<string name="code_item">Code item</string>
+<string name="quantity">Qty</string>
+<string name="size">Size\n(bytes)</string>
+<string name="total">Total\n(bytes)</string>
+<string name="cryptograph_id">Cryptograph ID</string>
+<string name="compressed_face_image">Compressed face image</string>
+<string name="face_biometric_template">Face biometric template</string>
+<string name="finger_biometric_templates">Fingerprint biometric templates</string>
+<string name="demographic_data">Demographic data</string>
+<string name="total_payload">Total payload (bytes)</string>
+<string name="compression_level">Compression Level</string>
+<string name="face_liveness_challenge_count">Face liveness challenge count</string>
+
+<string name="name">Name</string>
+<string name="value">Value</string>
+<string name="grid_blocks_x">Grid blocks X (columns)</string>
+<string name="grid_blocks_y">Grid blocks Y (rows)</string>
+<string name="style">Style</string>
+<string name="error_correction">Error correction (percents)</string>
+<string name="thicknes">Thickness</string>
+<string name="grid_size">Grid Size</string>
+<string name="expiry_date">Expiration Date</string>
+<string name="crypto_capacity">Cryptograph capacity (bytes)</string>
+
+<string-array name="qty_array">
+    <item>0 </item>
+    <item>1</item>
+</string-array>
+<string-array name="crypto_id_size_array">
+    <item>16</item>
+</string-array>
+
+<string-array name="finger_print_qty_array">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+</string-array>
+
+<string-array name="face_biometric_template_quality_array">
+    <item>286</item>
+    <item>542</item>
+</string-array>
+
+<string-array name="crypto_styles_array">
+    <item>Lines</item>
+    <item>Dots</item>
+</string-array>
+
+<string-array name="error_correction_percents">
+    <item>8</item>
+    <item>13</item>
+    <item>17</item>
+    <item>21</item>
+    <item>25</item>
+    <item>29</item>
+    <item>33</item>
+    <item>38</item>
+    <item>42</item>
+    <item>46</item>
+    <item>50</item>
+    <item>54</item>
+    <item>58</item>
+    <item>63</item>
+    <item>67</item>
+    <item>71</item>
+</string-array>
+
+<string-array name="error_correction_values">
+    <item>4</item>
+    <item>6</item>
+    <item>8</item>
+    <item>10</item>
+    <item>12</item>
+    <item>14</item>
+    <item>16</item>
+    <item>18</item>
+    <item>20</item>
+    <item>22</item>
+    <item>24</item>
+    <item>26</item>
+    <item>28</item>
+    <item>30</item>
+    <item>32</item>
+    <item>34</item>
+</string-array>
+
+
+<!--    <string-array name="finger_segmentation_array">-->
+<!--        <item>LEFT SLAP</item>-->
+<!--        <item>RIGHT SLAP</item>-->
+<!--        <item>LEFT THUMB</item>-->
+<!--        <item>RIGHT THUMB</item>-->
+<!--    </string-array>-->
+
+<string name="action_load_config">Load Config</string>
+<string name="action_settings">Settings</string>
+
+</resources>

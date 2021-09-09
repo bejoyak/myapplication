@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/CustomActionBar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?actionBarSize"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/backgroundre_small">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Scan Kit"
+                                    android:layout_marginLeft="20dp"
+                                    android:textColor="@color/seagreen"
+                                    android:textSize="20dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/scankit_tv"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:focusable="false"
+                                            android:hint="Scan Kit Data:"
+                                            android:inputType="textMultiLine"
+                                            android:singleLine="false"
+                                            android:maxLines="4"
+                                            android:text=""
+                                            android:textSize="15sp" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/circile"
+                                        android:gravity="center"
+                                        android:layout_marginStart="88dp"
+                                        android:orientation="vertical">
+
+                                        <Button
+                                            android:id="@+id/scankit_bt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/scanqr_new_res"
+                                            android:gravity="center"
+                                            android:onClick="OnCaptureFace"></Button>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                        <ListView
+                            android:id="@+id/results_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="true"
+                            android:layout_gravity="center">
+                        </ListView>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:gravity="end"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginLeft="60dp"
+                                android:background="@drawable/rightcrop_smallres"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/circile"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/vaccinebox_bt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/scanqr_new_res"
+                                        android:gravity="center"
+                                        android:onClick="OnCaptureFace"></Button>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Scan Vaccine Box"
+                                    android:textColor="@color/seagreen"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="20sp"
+                                    android:layout_marginTop="10dp">
+
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:orientation="horizontal">
+
+<!--                                    <LinearLayout-->
+<!--                                        android:layout_width="60dp"-->
+<!--                                        android:layout_height="60dp"-->
+<!--                                        android:layout_marginRight="10dp"-->
+<!--                                        android:background="@drawable/circile"-->
+<!--                                        android:orientation="vertical">-->
+
+<!--                                        <Button-->
+<!--                                            android:id="@+id/vaccinebox_bt"-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:layout_gravity="center"-->
+<!--                                            android:background="@drawable/scanqr_new_res"-->
+<!--                                            android:gravity="center"-->
+<!--                                            android:onClick="OnCaptureFace"></Button>-->
+<!--                                    </LinearLayout>-->
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:layout_width="220dp"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/vaccinebox_tv"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:focusable="false"
+                                            android:hint="Scan Vaccine Data:"
+                                            android:inputType="textMultiLine"
+                                            android:singleLine="false"
+                                            android:text=""
+                                            android:maxLines="4"
+                                            android:textSize="15sp" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:gravity="right">
+
+                            <LinearLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginBottom="30dp"
+                                android:background="@drawable/circile"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/next_kitvaccine_bt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/go_white_res"
+                                    android:gravity="center"></Button>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

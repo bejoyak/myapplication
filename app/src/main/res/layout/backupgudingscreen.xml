@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="600dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gudingscreen6" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="30dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:background="@color/white">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="60dp"-->
+    <!--                android:background="@color/seagreen"-->
+    <!--                android:text="Generate Heath Id Procedure"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:textSize="13dp"-->
+    <!--                android:fontFamily="@font/monsterrat_font_family"-->
+    <!--                ></Button>-->
+    <!--            <ScrollView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    >-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Step 1"-->
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:textSize="11dp"-->
+    <!--                        android:fontFamily="@font/monsterrat_font_family"-->
+    <!--                        android:textColor="@color/black">-->
+    <!--                    </TextView>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="220dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Scan the QR Code on the Kit"-->
+    <!--                            android:textSize="10dp"-->
+    <!--                            android:fontFamily="@font/monsterrat_font_family"-->
+    <!--                            android:layout_gravity="center"-->
+    <!--                            android:textColor="@color/black">-->
+    <!--                        </TextView>-->
+    <!--                        <ImageView-->
+    <!--                            android:layout_width="100dp"-->
+    <!--                            android:layout_height="80dp"-->
+    <!--                            android:src="@drawable/scan_kit_image"-->
+    <!--                            android:scaleType="fitXY"-->
+    <!--                            ></ImageView>-->
+    <!--                    </LinearLayout>-->
+    <!--                    <View-->
+    <!--                        android:layout_width="fill_parent"-->
+    <!--                        android:layout_height="1dp"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:background="@color/black" />-->
+
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Step 2"-->
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:textSize="11dp"-->
+    <!--                        android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                        android:textColor="@color/black">-->
+    <!--                    </TextView>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="220dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Scan the QR Code on the VaccineBox"-->
+    <!--                            android:textSize="10dp"-->
+    <!--                            android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                            android:layout_gravity="center"-->
+    <!--                            android:textColor="@color/black">-->
+    <!--                        </TextView>-->
+    <!--                        <ImageView-->
+    <!--                            android:layout_width="100dp"-->
+    <!--                            android:layout_height="80dp"-->
+    <!--                            android:src="@drawable/scanvaccineboximage"-->
+    <!--                            android:scaleType="fitXY"-->
+    <!--                            />-->
+    <!--                    </LinearLayout>-->
+    <!--                    <View-->
+    <!--                        android:layout_width="fill_parent"-->
+    <!--                        android:layout_height="1dp"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:background="@color/black" />-->
+
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Step 3"-->
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                        android:textSize="11dp"-->
+    <!--                        android:textColor="@color/black">-->
+    <!--                    </TextView>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="220dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="User Authentication using Patient Id /Email Id and is Promted to Capture Face Selfie"-->
+    <!--                            android:textSize="10dp"-->
+    <!--                            android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                            android:layout_gravity="center"-->
+    <!--                            android:textColor="@color/black">-->
+    <!--                        </TextView>-->
+    <!--                        <ImageView-->
+    <!--                            android:layout_width="100dp"-->
+    <!--                            android:layout_height="80dp"-->
+    <!--                            android:src="@drawable/vedio1_image"-->
+    <!--                            android:scaleType="fitXY"-->
+    <!--                            />-->
+    <!--                    </LinearLayout>-->
+    <!--                    <View-->
+    <!--                        android:layout_width="fill_parent"-->
+    <!--                        android:layout_height="1dp"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:background="@color/black" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Step 4"-->
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                        android:textSize="11dp"-->
+    <!--                        android:textColor="@color/black">-->
+    <!--                    </TextView>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="220dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Scan the QR Code on the Cartridge"-->
+    <!--                            android:textSize="10dp"-->
+    <!--                            android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                            android:layout_gravity="center"-->
+    <!--                            android:textColor="@color/black">-->
+    <!--                        </TextView>-->
+    <!--                        <ImageView-->
+    <!--                            android:layout_width="100dp"-->
+    <!--                            android:layout_height="80dp"-->
+    <!--                            android:src="@drawable/scancatridgeimage"-->
+    <!--                            android:scaleType="fitXY"-->
+    <!--                            />-->
+    <!--                    </LinearLayout>-->
+    <!--                    <View-->
+    <!--                        android:layout_width="fill_parent"-->
+    <!--                        android:layout_height="1dp"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:background="@color/black" />-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Step 5"-->
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                        android:textSize="11dp"-->
+    <!--                        android:textColor="@color/black">-->
+    <!--                    </TextView>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="220dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Scan the QR Code on the Injector"-->
+    <!--                            android:textSize="10dp"-->
+    <!--                            android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                            android:layout_gravity="center"-->
+    <!--                            android:textColor="@color/black">-->
+    <!--                        </TextView>-->
+    <!--                        <ImageView-->
+    <!--                            android:layout_width="100dp"-->
+    <!--                            android:layout_height="80dp"-->
+    <!--                            android:src="@drawable/scaninjectorimage"-->
+    <!--                            android:scaleType="fitXY"/>-->
+    <!--                    </LinearLayout>-->
+    <!--                    <View-->
+    <!--                        android:layout_width="fill_parent"-->
+    <!--                        android:layout_height="1dp"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:background="@color/black" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Step 6"-->
+    <!--                        android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:textSize="11dp"-->
+    <!--                        android:textColor="@color/black">-->
+    <!--                    </TextView>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="220dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Open the Camera to Capture Video"-->
+    <!--                            android:textSize="10dp"-->
+    <!--                            android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                            android:layout_gravity="center"-->
+    <!--                            android:textColor="@color/black">-->
+    <!--                        </TextView>-->
+    <!--                        <ImageView-->
+    <!--                            android:layout_width="100dp"-->
+    <!--                            android:layout_height="80dp"-->
+    <!--                            android:src="@drawable/vedio2_image"-->
+    <!--                            android:scaleType="fitXY" />-->
+    <!--                    </LinearLayout>-->
+    <!--                    <View-->
+    <!--                        android:layout_width="fill_parent"-->
+    <!--                        android:layout_height="1dp"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:background="@color/black" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Step 7"-->
+    <!--                        android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:textSize="11dp"-->
+    <!--                        android:textColor="@color/black">-->
+    <!--                    </TextView>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="220dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Get Generated Health Id to User Mail ID"-->
+    <!--                            android:textSize="10dp"-->
+    <!--                            android:fontFamily="@font/monsterrat_font_family"-->
+
+    <!--                            android:layout_gravity="center"-->
+
+    <!--                            android:textColor="@color/black">-->
+    <!--                        </TextView>-->
+    <!--                    </LinearLayout>-->
+    <!--                    <View-->
+    <!--                        android:layout_width="fill_parent"-->
+    <!--                        android:layout_height="1dp"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:background="@color/black" />-->
+
+    <!--                </LinearLayout>-->
+    <!--            </ScrollView>-->
+    <!--        </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_lg_backdrop"
+            android:padding="5dp"
+            android:text="Home"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/next_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_lg_backdrop"
+            android:padding="5dp"
+            android:text="Generate Health ID"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ai.tech5.tech5">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.VerifyResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GuidingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegulaOCRSample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ScanCatridgeInjectorVedioGenerate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ScanPatientIDFaceAuthentication"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ScanKitVaccineBox"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VedioRecording"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserScanning"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EnrollActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".idcaptureidcard.CaptureIdCard"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".enroll.view.EnrollUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".enroll.foruploadandverify.ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hdbarcode.hdbarcodereader.DecdeHDBarcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".enroll.foruploadandverify.GalleryActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
